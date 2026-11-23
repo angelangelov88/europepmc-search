@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Tailwind v4 leaves buttons with the browser's default arrow cursor. This
+   brings back the pointer for buttons that can be pressed. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
